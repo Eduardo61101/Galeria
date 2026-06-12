@@ -6,6 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Galeria Sermiteop</title>
 
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+
 <style>
 *{
     box-sizing:border-box;
@@ -280,6 +283,13 @@ function cargarMas(){
 }
 
 obtenerFotos("nature");
+
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./sw.js")
+        .then(() => console.log("PWA lista"))
+        .catch(error => console.error(error));
+}
 
 </script>
 
