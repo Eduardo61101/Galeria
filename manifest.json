@@ -1,7 +1,8 @@
 {
   "name": "Galeria Sermiteop",
   "short_name": "Sermiteop",
-  "start_url": "./",
+  "id": "/Galeria/",
+  "start_url": "/Galeria/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
